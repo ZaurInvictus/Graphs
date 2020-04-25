@@ -87,7 +87,6 @@ class Graph:
 
         This should be done using recursion.
         """
-        # TODO
         if visited is None:
             visited = set()
         visited.add(starting_vertex)
