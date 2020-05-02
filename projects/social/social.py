@@ -1,4 +1,5 @@
 import random
+# Import Queue
 class Queue():
     def __init__(self):
         self.queue = []
@@ -119,4 +120,5 @@ if __name__ == '__main__':
     total_social_paths = 0
     for user_id in connections:
         total_social_paths += len(connections[user_id])
+        # Calculating avg 
     print(f"Avg length of social path: {total_social_paths / len(connections)}")

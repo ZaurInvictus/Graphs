@@ -47,10 +47,17 @@ Note that in this sample, Users 3, 4 and 9 are not in User 1's extended social n
 ## 3. Questions
 
 1. To create 100 users with an average of 10 friends each, how many times would you need to call `add_friendship()`? Why?
+Answer:
+500 times. 
+Easiest example: 100 users and for each user we need to call it 5 times = 500 times in total.
+Whenever you call it, both friendships adds at the same time - there is 1000 lines but each line goes both ways that is why we don't need to call it 1000 times, we need to call it only 500 times.
 
-2. If you create 1000 users with an average of 5 random friends each, what percentage of other users will be in a particular user's extended social network? What is the average degree of separation between a user and those in his/her extended network?
 
 
+2. If you create 1000 users with an average of 5 random friends each, what percentage of other users will be in a particular user's extended social network? 
+What is the average degree of separation between a user and those in his/her extended network?
+Answer : 5
+print(f"Avg length of social path: {total_social_paths / len(connections)}")
 
 ## 4. Stretch Goal
 
